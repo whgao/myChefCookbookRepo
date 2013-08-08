@@ -1,0 +1,72 @@
+{
+  "name": "about_city",
+  "description": "Installs/Configures about_city",
+  "long_description": "about_city Cookbook\n===================\nTODO: Enter the cookbook description here.\n\ne.g.\nThis cookbook makes your favorite breakfast sandwhich.\n\nRequirements\n------------\nTODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.\n\ne.g.\n#### packages\n- `toaster` - about_city needs toaster to brown your bagel.\n\nAttributes\n----------\nTODO: List you cookbook attributes here.\n\ne.g.\n#### about_city::default\n<table>\n  <tr>\n    <th>Key</th>\n    <th>Type</th>\n    <th>Description</th>\n    <th>Default</th>\n  </tr>\n  <tr>\n    <td><tt>['about_city']['bacon']</tt></td>\n    <td>Boolean</td>\n    <td>whether to include bacon</td>\n    <td><tt>true</tt></td>\n  </tr>\n</table>\n\nUsage\n-----\n#### about_city::default\nTODO: Write usage instructions for each cookbook.\n\ne.g.\nJust include `about_city` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[about_city]\"\n  ]\n}\n```\n\nContributing\n------------\nTODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.\n\ne.g.\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write you change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: TODO: List authors\n",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "maintainer_email": "YOUR_EMAIL",
+  "license": "All rights reserved",
+  "platforms": {
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "about_city/city_name": {
+      "display_name": "City Name",
+      "description": "The city where I currently live.",
+      "required": "required",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    },
+    "about_city/rain": {
+      "display_name": "Raining",
+      "description": "Is it raining? Yes or No",
+      "required": "recommended",
+      "choice": [
+        "yes",
+        "no"
+      ],
+      "default": "no",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "calculated": false,
+      "type": "string"
+    },
+    "about_city/temperature": {
+      "display_name": "Temperature",
+      "description": "Current temperature in the city",
+      "required": "optional",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "about_city::my_city": "Information about my city"
+  },
+  "version": "0.1.0"
+}
