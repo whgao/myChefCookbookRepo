@@ -9,5 +9,5 @@
 
 
 rightscale_marker :begin
-log "Hello World! You should try Chef with RightScale!"
+log "Hello World! You should try Chef with RightScale!!!"
 rightscale_marker :end
